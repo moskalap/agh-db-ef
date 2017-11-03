@@ -1,0 +1,12 @@
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\bin\Debug\lab2-f.exe.config
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\bin\Debug\lab2-f.exe
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\bin\Debug\lab2-f.pdb
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\bin\Debug\EntityFramework.dll
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\bin\Debug\EntityFramework.xml
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2-f.csprojResolveAssemblyReference.cache
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2-f.exe
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2-f.pdb
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2_f.CategoryForm.resources
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2-f.csproj.GenerateResource.Cache
