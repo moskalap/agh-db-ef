@@ -25,7 +25,9 @@ namespace lab2_f
             context.Categories.Load();
             context.Products.Load();
 
-            this.categoryBindingSource.DataSource = context.Categories.Local.ToBindingList();   
+            
+            this.categoryBindingSource.DataSource = context.Categories.Local.ToBindingList();
+        
         }
 
         private void categoryBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -36,6 +38,11 @@ namespace lab2_f
         }
 
         private void categoryDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void productsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

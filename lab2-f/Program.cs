@@ -10,7 +10,7 @@ namespace lab2_f
     {
         static void Main(string[] args)
         {
-            var form = new CategoryForm();
+            var form = new MainMenu();
             form.ShowDialog();
 
         }

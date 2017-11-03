@@ -10,3 +10,7 @@ c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\l
 c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2-f.pdb
 c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2_f.CategoryForm.resources
 c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2-f.csproj.GenerateResource.Cache
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2_f.OrderForm.resources
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2_f.AddCustomerForm.resources
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2_f.MainMenu.resources
+c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2_f.AddOrderForm.resources
