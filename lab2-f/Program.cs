@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace lab2_f
@@ -10,8 +11,16 @@ namespace lab2_f
     {
         static void Main(string[] args)
         {
-            var form = new MainMenu();
-            form.ShowDialog();
+
+
+            Thread thread = new Thread(() =>
+            {
+                var form = new MainMenu();
+                form.ShowDialog();
+            });
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+            
 
         }
     }

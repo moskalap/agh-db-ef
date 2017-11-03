@@ -12,7 +12,7 @@ namespace lab2_f
         public int OrderId { get; set; }
         [Key]
         public int OrderDetailId { get; set; }
-        public Product Product { get; set; }
+        public Product ProductId { get; set; }
         public int Units { get; set; }
     }
 }

@@ -8,10 +8,13 @@ namespace lab2_f
 {
     class Order
     {
+        private ObservableListSource<OrderDetails> _orderDetails =
+                        new ObservableListSource<OrderDetails>();
         public int OrderId { get; set; }
         public DateTime OrderDate { get; set; }
-        public Customer CompanyName { get; set; }
-        public List<OrderDetails> OrdersDetails { get; set; }
+        public string CompanyName { get; set; }
+        public virtual ObservableListSource<OrderDetails> OrdersDetails { get { return _orderDetails; } }
+    
 
     }
 }

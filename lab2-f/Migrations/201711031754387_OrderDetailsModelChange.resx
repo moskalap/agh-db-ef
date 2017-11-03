@@ -117,16 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="orderBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="ordersDetailsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>353, 17</value>
-  </metadata>
-  <metadata name="categoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>555, 17</value>
-  </metadata>
-  <metadata name="productsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>733, 17</value>
-  </metadata>
+  <data name="Target" xml:space="preserve">
+    <value>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</value>
+  </data>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
+  </data>
 </root>
