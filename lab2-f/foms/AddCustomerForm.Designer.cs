@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCustomerForm));
             this.customerBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -45,12 +46,13 @@
             this.customerBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.customerDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EMail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Adress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingNavigator)).BeginInit();
             this.customerBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // customerBindingNavigator
@@ -79,7 +81,7 @@
             this.customerBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.customerBindingNavigator.Name = "customerBindingNavigator";
             this.customerBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.customerBindingNavigator.Size = new System.Drawing.Size(447, 25);
+            this.customerBindingNavigator.Size = new System.Drawing.Size(553, 25);
             this.customerBindingNavigator.TabIndex = 0;
             this.customerBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -91,6 +93,10 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // customerBindingSource
+            // 
+            this.customerBindingSource.DataSource = typeof(lab2_f.Customer);
             // 
             // bindingNavigatorCountItem
             // 
@@ -187,11 +193,13 @@
             this.customerDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.customerDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
+            this.EMail,
+            this.Adress,
             this.dataGridViewTextBoxColumn2});
             this.customerDataGridView.DataSource = this.customerBindingSource;
-            this.customerDataGridView.Location = new System.Drawing.Point(41, 42);
+            this.customerDataGridView.Location = new System.Drawing.Point(54, 45);
             this.customerDataGridView.Name = "customerDataGridView";
-            this.customerDataGridView.Size = new System.Drawing.Size(357, 220);
+            this.customerDataGridView.Size = new System.Drawing.Size(445, 210);
             this.customerDataGridView.TabIndex = 1;
             this.customerDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customerDataGridView_CellContentClick);
             // 
@@ -201,21 +209,29 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "Nazwa Klienta";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
+            // EMail
+            // 
+            this.EMail.DataPropertyName = "EMail";
+            this.EMail.HeaderText = "E-Mail";
+            this.EMail.Name = "EMail";
+            // 
+            // Adress
+            // 
+            this.Adress.DataPropertyName = "Adress";
+            this.Adress.HeaderText = "Adres";
+            this.Adress.Name = "Adress";
+            // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Descritpion";
             this.dataGridViewTextBoxColumn2.HeaderText = "Opis";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // customerBindingSource
-            // 
-            this.customerBindingSource.DataSource = typeof(lab2_f.Customer);
-            // 
             // AddCustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 308);
+            this.ClientSize = new System.Drawing.Size(553, 298);
             this.Controls.Add(this.customerDataGridView);
             this.Controls.Add(this.customerBindingNavigator);
             this.Name = "AddCustomerForm";
@@ -223,8 +239,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingNavigator)).EndInit();
             this.customerBindingNavigator.ResumeLayout(false);
             this.customerBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,6 +264,8 @@
         private System.Windows.Forms.ToolStripButton customerBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView customerDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EMail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Adress;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }

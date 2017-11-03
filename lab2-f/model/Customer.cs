@@ -12,5 +12,7 @@ namespace lab2_f
         [Key]
         public string CompanyName { get; set; }
         public string Descritpion { get; set; }
+        public string EMail { get; set; }
+        public string Adress { get; set; }
     }
 }

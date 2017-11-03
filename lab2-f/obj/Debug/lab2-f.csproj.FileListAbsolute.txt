@@ -14,3 +14,5 @@ c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\l
 c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2_f.AddCustomerForm.resources
 c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2_f.MainMenu.resources
 c:\users\student\documents\visual studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2_f.AddOrderForm.resources
+C:\Users\student\Documents\Visual Studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2_f.Migrations.InitialCreate.resources
+C:\Users\student\Documents\Visual Studio 2012\Projects\lab2-f\lab2-f\obj\Debug\lab2_f.Migrations.CustomerModelChange.resources
