@@ -34,6 +34,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.Produkty = new System.Windows.Forms.TabControl();
             this.customerTab = new System.Windows.Forms.TabPage();
+            this.label9 = new System.Windows.Forms.Label();
             this.ordersDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -166,6 +167,7 @@
             // customerTab
             // 
             this.customerTab.AutoScroll = true;
+            this.customerTab.Controls.Add(this.label9);
             this.customerTab.Controls.Add(this.ordersDataGridView);
             this.customerTab.Controls.Add(this.customerDataGridView);
             this.customerTab.Location = new System.Drawing.Point(4, 22);
@@ -175,7 +177,15 @@
             this.customerTab.TabIndex = 2;
             this.customerTab.Text = "Podmioty";
             this.customerTab.UseVisualStyleBackColor = true;
- 
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(299, 155);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(98, 13);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Zamówienia klienta";
             // 
             // ordersDataGridView
             // 
@@ -186,29 +196,30 @@
             this.dataGridViewTextBoxColumn17,
             this.dataGridViewTextBoxColumn18});
             this.ordersDataGridView.DataSource = this.ordersBindingSource;
-            this.ordersDataGridView.Location = new System.Drawing.Point(132, 188);
+            this.ordersDataGridView.Location = new System.Drawing.Point(231, 189);
             this.ordersDataGridView.Name = "ordersDataGridView";
-            this.ordersDataGridView.Size = new System.Drawing.Size(430, 220);
+            this.ordersDataGridView.Size = new System.Drawing.Size(243, 220);
             this.ordersDataGridView.TabIndex = 3;
- 
             // 
             // dataGridViewTextBoxColumn16
             // 
             this.dataGridViewTextBoxColumn16.DataPropertyName = "OrderId";
-            this.dataGridViewTextBoxColumn16.HeaderText = "OrderId";
+            this.dataGridViewTextBoxColumn16.HeaderText = "ID zamówienia";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // dataGridViewTextBoxColumn17
             // 
             this.dataGridViewTextBoxColumn17.DataPropertyName = "OrderDate";
-            this.dataGridViewTextBoxColumn17.HeaderText = "OrderDate";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Data zamówienia";
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             // 
             // dataGridViewTextBoxColumn18
             // 
             this.dataGridViewTextBoxColumn18.DataPropertyName = "CompanyName";
-            this.dataGridViewTextBoxColumn18.HeaderText = "CompanyName";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Nazwa klienta";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.Visible = false;
             // 
             // ordersBindingSource
             // 
@@ -238,7 +249,6 @@
             this.customerDataGridView.Name = "customerDataGridView";
             this.customerDataGridView.Size = new System.Drawing.Size(445, 102);
             this.customerDataGridView.TabIndex = 2;
-            this.customerDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customerDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -370,7 +380,7 @@
             this.categoryDataGridView.DataSource = this.categoryBindingSource;
             this.categoryDataGridView.Location = new System.Drawing.Point(33, 45);
             this.categoryDataGridView.Name = "categoryDataGridView";
-            this.categoryDataGridView.Size = new System.Drawing.Size(145, 105);
+            this.categoryDataGridView.Size = new System.Drawing.Size(145, 320);
             this.categoryDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn3
@@ -432,7 +442,6 @@
             this.billPanel.Size = new System.Drawing.Size(363, 420);
             this.billPanel.TabIndex = 3;
             this.billPanel.Visible = false;
-
             // 
             // sumLabel
             // 
@@ -591,7 +600,6 @@
             this.orderDateBox.Name = "orderDateBox";
             this.orderDateBox.Size = new System.Drawing.Size(200, 20);
             this.orderDateBox.TabIndex = 4;
-            this.orderDateBox.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dataGridView1
             // 
@@ -603,7 +611,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(243, 150);
             this.dataGridView1.TabIndex = 3;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // ProductId
             // 
@@ -642,7 +649,6 @@
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Podmiot";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // comboBox1
             // 
@@ -654,7 +660,6 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.ValueMember = "CompanyName";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // orderDataGridView
             // 
@@ -669,22 +674,21 @@
             this.dataGridViewTextBoxColumn11});
             this.orderDataGridView.ContextMenuStrip = this.contextMenuStrip2;
             this.orderDataGridView.DataSource = this.orderBindingSource;
-            this.orderDataGridView.Location = new System.Drawing.Point(38, 11);
+            this.orderDataGridView.Location = new System.Drawing.Point(22, 11);
             this.orderDataGridView.Name = "orderDataGridView";
             this.orderDataGridView.ShowCellErrors = false;
             this.orderDataGridView.ShowCellToolTips = false;
             this.orderDataGridView.ShowEditingIcon = false;
             this.orderDataGridView.ShowRowErrors = false;
-            this.orderDataGridView.Size = new System.Drawing.Size(245, 115);
+            this.orderDataGridView.Size = new System.Drawing.Size(273, 115);
             this.orderDataGridView.TabIndex = 0;
             this.orderDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.orderDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "OrderId";
-            this.dataGridViewTextBoxColumn9.HeaderText = "OrderId";
+            this.dataGridViewTextBoxColumn9.HeaderText = "ID zamówienia";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Visible = false;
             // 
             // dataGridViewTextBoxColumn10
             // 
@@ -736,7 +740,6 @@
             this.customerBindingNavigator.Size = new System.Drawing.Size(794, 25);
             this.customerBindingNavigator.TabIndex = 5;
             this.customerBindingNavigator.Text = "bindingNavigator1";
-
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -842,9 +845,9 @@
             this.Controls.Add(this.button3);
             this.Name = "MainMenu";
             this.Text = "MainMenu";
-
             this.Produkty.ResumeLayout(false);
             this.customerTab.ResumeLayout(false);
+            this.customerTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
@@ -910,13 +913,7 @@
         private System.Windows.Forms.BindingSource ordersDetailsBindingSource;
         private System.Windows.Forms.BindingSource orderBindingSource;
         private System.Windows.Forms.DataGridView orderDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridView ordersDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.BindingSource ordersBindingSource;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button AddOrder;
@@ -954,5 +951,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
     }
 }

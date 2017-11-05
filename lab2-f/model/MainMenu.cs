@@ -102,9 +102,7 @@ namespace lab2_f
 
             }
 
-     
-
-            var errors  = validNewOrder(order);
+            var errors  = OrderService.validOrder(order, context);
 
             if (errors.Count() == 0)
             {
@@ -140,71 +138,17 @@ namespace lab2_f
           
 
         }
-
-        private List<string> validNewOrder(Order order)
-        {
-            List<string> errors = new List<string>();
-
-            foreach(OrderDetails od in order.OrdersDetails)
-            {
-                var left = context.Products.Where(p => p.ProductId == od.ProductId.ProductId).Select(p => p).First();
-                if (left.UnitsInStock < od.Units)
-                    errors.Add(string.Format("{0} zostało sztuk : {1}", left.Name, left.UnitsInStock));
-                  
-            }
-            return errors;
-        }
-
-        private void newOrdersDetailsGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ordersDetailsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ordersTab_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void button6_Click(object sender, EventArgs e)
         {
             this.dataGridView1.Rows.Clear();
             this.panel1.Visible = false;
         }
 
-        private void customerDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void wygenerujFakturęToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Order order = (Order) this.orderDataGridView.SelectedRows[0].DataBoundItem;
-            Console.WriteLine("Faktura dla " + order.OrderId);
+     
         }
 
         private void button6_Click_1(object sender, EventArgs e)
@@ -234,6 +178,11 @@ namespace lab2_f
             Order order = ((Order)this.orderDataGridView.CurrentRow.DataBoundItem);
             form.OrderId = order.OrderId;
             form.ShowDialog();
+        }
+
+        private void ordersTab_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

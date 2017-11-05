@@ -30,9 +30,6 @@ namespace lab2_f.services
             return a;
         }
 
-
-
-
         internal static decimal findSumForOrderBill(List<OrderBillDto> orBill)
         {
             decimal sum = 0;
@@ -42,6 +39,20 @@ namespace lab2_f.services
                 sum += bille.Unit * bille.UnitPrice;
             }
             return sum;
+        }
+    
+        internal static List<string> validOrder(Order order, ProductContext context)
+        {
+            List<string> errors = new List<string>();
+
+            foreach (OrderDetails od in order.OrdersDetails)
+            {
+                var left = context.Products.Where(p => p.ProductId == od.ProductId.ProductId).Select(p => p).First();
+                if (left.UnitsInStock < od.Units)
+                errors.Add(string.Format("{0} zostało sztuk : {1}", left.Name, left.UnitsInStock));
+
+            }
+            return errors;
         }
     }
 }
