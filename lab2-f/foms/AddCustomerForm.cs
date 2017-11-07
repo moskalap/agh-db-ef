@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.Entity;
 
 
-namespace lab2_f
+namespace orderingProduct
 {
     public partial class AddCustomerForm : Form
     {

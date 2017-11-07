@@ -1,4 +1,4 @@
-﻿namespace lab2_f
+﻿namespace orderingProduct
 {
     partial class CategoryForm
     {
@@ -102,7 +102,7 @@
             // 
             // categoryBindingSource
             // 
-            this.categoryBindingSource.DataSource = typeof(lab2_f.Category);
+            this.categoryBindingSource.DataSource = typeof(orderingProduct.Category);
             // 
             // bindingNavigatorCountItem
             // 

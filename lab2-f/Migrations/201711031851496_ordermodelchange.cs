@@ -1,4 +1,4 @@
-namespace lab2_f.Migrations
+namespace orderingProduct.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

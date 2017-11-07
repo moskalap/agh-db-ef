@@ -7,7 +7,7 @@
     <ProjectGuid>{79AC8F98-09DE-469D-8B85-2DEC1D7155CC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>lab2_f</RootNamespace>
+    <RootNamespace>orderingProduct</RootNamespace>
     <AssemblyName>lab2-f</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -74,16 +74,16 @@
     <Compile Include="Migrations\201711031933203_ProCe.Designer.cs">
       <DependentUpon>201711031933203_ProCe.cs</DependentUpon>
     </Compile>
-    <Compile Include="model\EditOrderForm.cs">
+    <Compile Include="foms\EditOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="model\EditOrderForm.Designer.cs">
+    <Compile Include="foms\EditOrderForm.Designer.cs">
       <DependentUpon>EditOrderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="model\MainMenu.cs">
+    <Compile Include="foms\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="model\MainMenu.Designer.cs">
+    <Compile Include="foms\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201711031403204_InitialCreate.cs" />
@@ -93,6 +93,10 @@
     <Compile Include="Migrations\201711031631269_CustomerModelChange.cs" />
     <Compile Include="Migrations\201711031631269_CustomerModelChange.Designer.cs">
       <DependentUpon>201711031631269_CustomerModelChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711072204040_ProdChang.cs" />
+    <Compile Include="Migrations\201711072204040_ProdChang.Designer.cs">
+      <DependentUpon>201711072204040_ProdChang.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="model\Category.cs" />
@@ -158,10 +162,10 @@
     <EmbeddedResource Include="Migrations\201711031933203_ProCe.resx">
       <DependentUpon>201711031933203_ProCe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="model\EditOrderForm.resx">
+    <EmbeddedResource Include="foms\EditOrderForm.resx">
       <DependentUpon>EditOrderForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="model\MainMenu.resx">
+    <EmbeddedResource Include="foms\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711031403204_InitialCreate.resx">
@@ -172,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="foms\OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711072204040_ProdChang.resx">
+      <DependentUpon>201711072204040_ProdChang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,4 +1,4 @@
-﻿namespace lab2_f
+﻿namespace orderingProduct
 {
     partial class AddCustomerForm
     {
@@ -96,7 +96,7 @@
             // 
             // customerBindingSource
             // 
-            this.customerBindingSource.DataSource = typeof(lab2_f.Customer);
+            this.customerBindingSource.DataSource = typeof(orderingProduct.Customer);
             // 
             // bindingNavigatorCountItem
             // 

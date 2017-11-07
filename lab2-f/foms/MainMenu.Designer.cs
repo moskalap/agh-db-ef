@@ -1,4 +1,4 @@
-﻿namespace lab2_f
+﻿namespace orderingProduct
 {
     partial class MainMenu
     {
@@ -49,6 +49,8 @@
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.wygenerujFakturęToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.productTab = new System.Windows.Forms.TabPage();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.productsDataGridView = new System.Windows.Forms.DataGridView();
@@ -115,6 +117,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.customerDataGridView)).BeginInit();
             this.contextMenuStrip2.SuspendLayout();
             this.productTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
@@ -228,7 +231,7 @@
             // 
             // customerBindingSource
             // 
-            this.customerBindingSource.DataSource = typeof(lab2_f.Customer);
+            this.customerBindingSource.DataSource = typeof(orderingProduct.Customer);
             // 
             // customerDataGridView
             // 
@@ -291,6 +294,8 @@
             // productTab
             // 
             this.productTab.AutoScroll = true;
+            this.productTab.Controls.Add(this.numericUpDown1);
+            this.productTab.Controls.Add(this.button1);
             this.productTab.Controls.Add(this.label8);
             this.productTab.Controls.Add(this.label6);
             this.productTab.Controls.Add(this.productsDataGridView);
@@ -302,6 +307,23 @@
             this.productTab.TabIndex = 3;
             this.productTab.Text = "Produkty";
             this.productTab.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(340, 345);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(485, 345);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Uzupełnij zapas";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label8
             // 
@@ -368,7 +390,7 @@
             // 
             // categoryBindingSource
             // 
-            this.categoryBindingSource.DataSource = typeof(lab2_f.Category);
+            this.categoryBindingSource.DataSource = typeof(orderingProduct.Category);
             // 
             // categoryDataGridView
             // 
@@ -514,7 +536,7 @@
             // 
             // orderBillDtoBindingSource
             // 
-            this.orderBillDtoBindingSource.DataSource = typeof(lab2_f.OrderBillDto);
+            this.orderBillDtoBindingSource.DataSource = typeof(orderingProduct.OrderBillDto);
             // 
             // adressLabel
             // 
@@ -624,7 +646,7 @@
             // 
             // productBindingSource
             // 
-            this.productBindingSource.DataSource = typeof(lab2_f.Product);
+            this.productBindingSource.DataSource = typeof(orderingProduct.Product);
             // 
             // Units
             // 
@@ -704,7 +726,7 @@
             // 
             // orderBindingSource
             // 
-            this.orderBindingSource.DataSource = typeof(lab2_f.Order);
+            this.orderBindingSource.DataSource = typeof(orderingProduct.Order);
             // 
             // ordersDetailsBindingSource
             // 
@@ -855,6 +877,7 @@
             this.contextMenuStrip2.ResumeLayout(false);
             this.productTab.ResumeLayout(false);
             this.productTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
@@ -958,5 +981,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button button1;
     }
 }

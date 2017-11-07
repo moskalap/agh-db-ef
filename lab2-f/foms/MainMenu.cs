@@ -8,10 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity;
-using lab2_f.model;
-using lab2_f.services;
+using orderingProduct.model;
+using orderingProduct.services;
 
-namespace lab2_f
+namespace orderingProduct
 {
     public partial class MainMenu : Form
     {
@@ -183,6 +183,11 @@ namespace lab2_f
         private void ordersTab_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ProductService.supplyNewProducts(context, ((Product)productsDataGridView.CurrentRow.DataBoundItem).ProductId, (int) numericUpDown1.Value);
         }
 
     }

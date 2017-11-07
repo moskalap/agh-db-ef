@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace lab2_f
+namespace orderingProduct
 {
     public partial class AddOrderForm : Form
     {

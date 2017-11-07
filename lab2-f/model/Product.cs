@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab2_f
+namespace orderingProduct
 {
     class Product
     {
@@ -12,6 +12,7 @@ namespace lab2_f
         public string Name { get; set; }
         public int UnitsInStock { get; set; }
         public decimal UnitPrice { get; set; }
+        public int CategoryId { get; set; }
 
     }
 }

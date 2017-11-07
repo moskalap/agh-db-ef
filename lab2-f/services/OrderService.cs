@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab2_f.services
+namespace orderingProduct.services
 {
     class OrderService
     {
@@ -29,7 +29,13 @@ namespace lab2_f.services
 
             return a;
         }
+        public static void addOrder(ProductContext context, Customer customter, DateTime orderDate, OrderDetails orderDetails)
+        {
+            context.Orders.Add(new Order() {CompanyName = customter.CompanyName});
+            context.SaveChanges();
 
+
+        }
         internal static decimal findSumForOrderBill(List<OrderBillDto> orBill)
         {
             decimal sum = 0;

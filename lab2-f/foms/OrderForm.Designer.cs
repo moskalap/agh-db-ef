@@ -1,4 +1,4 @@
-﻿namespace lab2_f
+﻿namespace orderingProduct
 {
     partial class OrderForm
     {
@@ -53,7 +53,7 @@
             // 
             // orderBindingSource
             // 
-            this.orderBindingSource.DataSource = typeof(lab2_f.Order);
+            this.orderBindingSource.DataSource = typeof(orderingProduct.Order);
             // 
             // ordersDetailsBindingSource
             // 
@@ -77,7 +77,7 @@
             // 
             // categoryBindingSource
             // 
-            this.categoryBindingSource.DataSource = typeof(lab2_f.Category);
+            this.categoryBindingSource.DataSource = typeof(orderingProduct.Category);
             // 
             // categoryDataGridView
             // 

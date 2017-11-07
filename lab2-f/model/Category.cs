@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using lab2_f;
+using orderingProduct;
 
 
-namespace lab2_f
+namespace orderingProduct
 {
     class Category
     {

@@ -1,4 +1,4 @@
-﻿namespace lab2_f.model
+﻿namespace orderingProduct.model
 {
     partial class EditOrderForm
     {
@@ -43,11 +43,11 @@
             // 
             // orderBindingSource
             // 
-            this.orderBindingSource.DataSource = typeof(lab2_f.Order);
+            this.orderBindingSource.DataSource = typeof(orderingProduct.Order);
             // 
             // orderBillDtoBindingSource
             // 
-            this.orderBillDtoBindingSource.DataSource = typeof(lab2_f.OrderBillDto);
+            this.orderBillDtoBindingSource.DataSource = typeof(orderingProduct.OrderBillDto);
             // 
             // cancel
             // 

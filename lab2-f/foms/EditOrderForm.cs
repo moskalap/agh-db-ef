@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity;
 
-namespace lab2_f.model
+namespace orderingProduct.model
 {
     public partial class EditOrderForm : Form
     {

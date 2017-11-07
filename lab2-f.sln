@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab2-f", "lab2-f\lab2-f.csproj", "{79AC8F98-09DE-469D-8B85-2DEC1D7155CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ordering-product", "lab2-f\ordering-product.csproj", "{79AC8F98-09DE-469D-8B85-2DEC1D7155CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

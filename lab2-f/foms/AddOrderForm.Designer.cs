@@ -1,4 +1,4 @@
-﻿namespace lab2_f
+﻿namespace orderingProduct
 {
     partial class AddOrderForm
     {
